@@ -1,0 +1,79 @@
+.header{
+  margin:auto;
+  text-align: center;
+  padding-top: 3%; 
+ font-size: 2.5em;
+}
+.tg{
+  margin:auto;
+  text-align: center;
+  padding: 5%;
+}
+
+#And{
+  text-align: left;
+  padding: 5%;
+  margin:auto;
+  border:1px solid #000;
+  padding:8px 16px;
+  width: 600px;
+  height: 150px;
+
+  background-color: rgb(33, 166, 184);
+  box-shadow: 10px 10px black;
+}
+#And2{
+   text-align: left;
+  padding: 5%;
+  margin:auto;
+  border:1px solid #000;
+  padding:8px 16px;
+  width: 600px;
+  height: 150px;
+
+  background-color: rgb(33, 166, 184);
+  box-shadow: 10px 10px black;
+}
+#first{
+  padding: 6%;
+  
+}
+.card-img-top{
+  margin:auto;
+}
+.Dragon{
+  size 
+}
+ 
+#cardone{
+  width:500px;
+  height:200px;
+}
+.center{
+  margin:auto;
+  padding:10%;
+ 
+}
+.card-img-bottom{
+  height:500px;
+  width:400px;
+}
+
+
+  .card{
+    float:left;
+    width:33%;
+    height:800px;
+  }
+footer{
+  clear:both;
+}
+
+@media screen and (max-width:600px){
+  
+  .card {
+    float:none;
+    width:100%;
+    margin:20px 0;
+  }
+  

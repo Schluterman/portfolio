@@ -21,13 +21,7 @@ p {
 	margin-bottom: 20px;
 }	
 
-.img-style-1 {
-	float: left;
-	margin-right: 10px;
-    margin-bottom: 10px;
-	padding: 5px;
-	border: 1px solid #CCC;
-}	
+
 	
 /* tutorial styles */
 
@@ -78,4 +72,9 @@ p {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+img[alt*="Letter"]{
+    width: 400px;
+    height: 400px;
 }
