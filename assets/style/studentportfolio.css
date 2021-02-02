@@ -29,19 +29,7 @@ body {
 	background-color: mix(#fff, #e91e63, 82%);
 }
 
-// Codepen spesific styling - only to center the elements in the pen preview and viewport 
-.container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-// End Codepen spesific styling
+
 
 
 #myheader{
