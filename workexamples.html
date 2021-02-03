@@ -15,7 +15,7 @@
 
 <body>
     <div id="container">
-        <h1>Work Examples</h1>
+        <h1 id="myheader">Work Examples</h1>
 
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Writing')" id="defaultOpen">Writing</button>
@@ -28,31 +28,35 @@
         </div>
 
         <div id="Writing" class="tabcontent">
-            <div class="container">
-  <div class="row">
-    <div class="col-sm">
-       <a href="https://docs.google.com/document/d/1eevOANHQDLqmf033cg_LWIImJPeIir7qTjug50HRbVw/edit"><img src="./assets/images/Bootstrap-Blog-Google-Docs.jpg" alt="Letter"></a>
-    </div>
-    <div class="col-sm">
-       <p class="right-align"> This writing example is a blog styled post directed toward new web developers on a breif understanding of Bootstrap.   </p>
-       
-              
-    </div>
-    
-  </div>
+            <div class="container"id="blackcard">
+              <head>
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+              </head>
+              <body>
+              <div class="container"id="blackcard">
+                <div class="card">
+                  
+                  <img src="assets/images/image1.JPG"alt="writing" onclick="enlargeImg(this)"> 
+                  
+                </div>
+                
+                <div class="card">
+                 <img src="assets/images/image2.jpg" alt="writing" onclick="enlargeImg(this)">
+                  
+                </div>
+                <div class="card">
+                  <img src="assets/images/image3.jpg" alt="writing" onclick="enlargeImg(this)">
+                  
+                </div>
+                <div class="card">
+                  <img src="assets/images/image4.JPG" alt="writing" onclick="enlargeImg(this)">
+                  
+                </div>
+              </div>
+              </body>
     </div> 
     
-    <br>
-    <div class="container">
-  <div class="row">
-    <div class="col-sm">
-        <a href="https://www.instagram.com/nxpoetry/?hl=en"><img src="./assets/images/IMG_3290.jpg" alt="Letter"></a>
-    </div>
-    <div class="col-sm">
-      
-       
-              
-    </div>
+    
     
   </div>
     </div> 
@@ -126,5 +130,13 @@
     </div>
 <script type="text/javascript" src="assets/scripts/index.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+  // Function to increase image size 
+  function enlargeImg(img) { 
+      img.style.transform = "scale(1.5)"; 
+      img.style.transition = 
+        "transform 0.25s ease"; 
+  } 
+</script> 
 </body>
 </html>
