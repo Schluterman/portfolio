@@ -1,0 +1,82 @@
+@import "color-schemer";
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+
+
+.buttonproject {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+  background: #fff;
+  width: 100px;
+  padding: 20px 30px;
+
+  border: 5px solid #4ac0ee;
+  color: #4ac0ee;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align:center;
+  
+  z-index: 2;
+  @include transition(all .15s .15s ease-out);
+
+    &:after,
+    &:before {
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 100%;
+        left: 0;
+        bottom: -10px;
+        content: '';
+        z-index: 1;
+        @include transition(all .15s .15s ease-out);
+    }
+
+    &:before {
+        background: #4ac0ee;
+        top: 10px;
+        left: -15px;
+        height: 100%;
+        width: 15px;
+    }
+
+    &:after {
+        width:100%;
+        background: #4ac0ee;
+        right: 0px;
+        left: -15px;
+        height: 15px;
+    }
+
+    &:hover {
+      background: #4ac0ee;
+      color: #fff;
+      margin-left: -7.5px;
+      margin-bottom: -7.5px;
+
+      &:after,
+      &:before {
+          top: 100%;
+          left: 0;
+          bottom: 0px;
+      }
+
+      &:before {
+          top: 0px;
+          left: 0px;
+          width: 0px;
+      }
+
+      &:after {
+          right: 0px;
+          left: 0px;
+          height: 0px;
+      }
+
+    }
+}
