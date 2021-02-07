@@ -1,39 +1,32 @@
-/*  body */
+
 	
-body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	/*background-color: #666;*/
-	}
 
 #container {
-	width: 1000px;
+	width: 100%;
 	margin-right: auto;
-	margin-left: auto;
+  margin-left: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
+  
 }
 
-p {
-	margin-bottom: 20px;
-	}
 
-.listmargin  {
-	margin-bottom: 20px;
-}	
-*, *:after, *:before {
-	box-sizing: border-box;
-}
 
 body {
-	font-family: "Inter", sans-serif;
-	background-color: mix(#fff, #e91e63, 82%);
+	
+  background-image: url("../images/background2.jpg");
+  background-size:cover;
+  
 }
+
 .text-left{
   margin-right:26%;
   margin-top:15%;
   font-weight: bold;
   font-kerning: normal;
-
+color: #048FC5;
+text-shadow: 0 0 3vw rgb(119, 198, 224);
+font-size: larger;
 }
 
 
@@ -42,51 +35,52 @@ body {
     text-align: center;
     color:#048FC5;
 }
-
-	
-/* tutorial styles */
-
-/* tabs */
-
-/* Style the tab */
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 1.5rem;
-      color:var(--colorShadeA);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: inherit;
+h2{
+  padding-top: 5%;
+  color: #048FC5;
+}
+	h3{
+    color: #048FC5;
   }
+  li{
+    color: #048FC5;
+  }
+  p{
+    color: #048FC5;
+  }
+ol{
+  color: #048FC5;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+    color: #048FC5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+
+}
   
   .tab button {
-     padding: 1em 2em;
-     border: 2px solid var(--colorShadeA);
-    border-radius: 1em;
-    background: var(--colorShadeE);
-  transform-style: preserve-3d;
-     transition: all 175ms cubic-bezier(0, 0, 1, 1);
-  }
-  .tab button::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--colorShadeC);
-    border-radius: inherit;
-      box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
-   transform: translate3d(0, 0.75em, -1em);
-       transition: all 175ms cubic-bezier(0, 0, 1, 1);
-  }
+    padding: 1em 2em;
+    padding-top: 25px;
+    border: 2px solid var(--colorShadeA);
+   border-radius: 1em;
+   background: var(--colorShadeE);
+ transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+    
+    left:25%;
+    right:25%;
+    
+ }
+ 
   
   
   .tab button:hover {
@@ -94,63 +88,22 @@ button {
     transform: translate(0, 0.375em);
   }
   
-  .tab button:hover::before {
-    transform: translate3d(0, 0.75em, -1em);
-  }
+ 
+ 
   
-  .tab button:active {
-              transform: translate(0em, 0.75em);
-  }
   
-  .tab button:active::before {
-    transform: translate3d(0, 0, -1em);
-    
-        box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
-  
-  }
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
 
-.tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
 
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+
+
+
 
 img[alt*="Letter"]{
     width: 400px;
     height: 400px;
 }
 
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
+
 
 .bar{
   background-color: #048FC5;
@@ -250,7 +203,37 @@ img[alt*="Letter"]{
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
 }
-img[alt*="writing"]{
+img[alt*="writingimg"]{
   width:100%;
   height:100%;
+  
+}
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 7vw;
+  line-height: 7vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
 }
