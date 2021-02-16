@@ -179,7 +179,7 @@ img[alt*="Letter"]{
   top: 160px;
   left: calc(50% - 300px);
   display: flex;
-  ;
+  margin-top: 10%;
 }
 
 
